@@ -7,6 +7,44 @@
     <title>Vite + React</title>
   </head>
   <body>
+
+    <!-- Contact form section -->
+
+    <section class="form-container">
+      <h2 class="form-heading">Have Questions About Planetary Science?</h2>
+      <p class="form-description">
+        Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? Reach out and we’ll get back to you.
+      </p>
+
+      <form action="#" method="get">
+        <div class="form-grid">
+          
+          <div class="input-group"> 
+            <label for="fullname">Full Name<span class="required">*</span></label>
+            <input type="text" id="fullname" name="fullname" placeholder="Full name" required>
+          </div>
+
+          <div class="input-group"> 
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+          </div>
+
+          <div class="input-group"> 
+            <label for="phone-number">Phone number<span class="required">*</span></label> 
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Please enter a valid phone number" maxlength="11" required>
+          </div>    
+
+          <div class="input-group"> 
+            <label for="message">Message<span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Enter your message" minlength="10" maxlength="100" required></textarea>
+            <span class="helper-text">100 characters</span>
+          </div>
+          
+        </div> <button type="submit" class="submit-btn">Submit <span class="arrow">&#8250;</span></button>
+      </form>
+    </section>
+    <!-- Above is the end of the contact form section -->
+     
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
