@@ -16,7 +16,7 @@ function Footer() {
           <div className="copyright">
             <p>&copy;2026 Designed by Amaka & Ifeoma A.</p>
             <p>Built by Phoenix-Cohort-Frontend-Development-Capstone-Project-Group-9.</p>
-            <p>All rights reserved.</p>
+            <p>All rights reserved</p>
           </div>
 
           <div className="academy">
