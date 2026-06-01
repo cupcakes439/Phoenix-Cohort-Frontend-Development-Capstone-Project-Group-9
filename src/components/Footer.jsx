@@ -16,8 +16,8 @@ function Footer() {
           <div className="copyright">
             <p>&copy;2026 Designed by Amaka & Ifeoma A.</p>
             <p className="footer-text">
-              Built by Phoenix-Cohort-Frontend-Development-Capstone-Project-Group-9.
-              <span className="rights">All rights reserved</span>
+              Built by Phoenix-Cohort-Frontend-Development-Capstone-Project-Group-9. 
+              <span className="rights"> All rights reserved</span>
             </p>
           </div>
 
