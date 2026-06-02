@@ -1,14 +1,11 @@
-import PlanetImages from "./PlanetImages";
-import PlanetTable from "./PlanetTable";
-import "../styles/planets.css";
+import Planets from "./PlanetSection/Planets";
 
-function PlanetSection() {
+const PlanetSection = () => {
   return (
-    <section>
-      <PlanetImages />
-      <PlanetTable />
-    </section>
-  );
+    <div>
+      <Planets />
+    </div>
+  )
 }
 
-export default PlanetSection;
+export default PlanetSection
