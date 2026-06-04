@@ -26,6 +26,16 @@
   margin-bottom: 1.5rem;
 }
 
+.footer a,
+.footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
 .footer-text{
     margin: 0;
 }
@@ -40,6 +50,10 @@
 .academy p {
   margin: 0.25rem 0;
   font-size: 0.9rem;
+}
+
+.team-description {
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
