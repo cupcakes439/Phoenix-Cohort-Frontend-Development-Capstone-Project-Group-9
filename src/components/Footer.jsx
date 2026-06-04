@@ -6,9 +6,8 @@ function Footer() {
       <div className="footer-content">
         <h3>About</h3>
 
-        <p className="members">
-          First name of group members
-        </p>
+        <p>First name of group members:</p>
+        <p className="members">Adeola • Olayinka • Semiyu • Ayobami • Abdulmuiz • Okiezi • Sunday • Victoria • Chidinma • Oluwanifemi • Victoria • Idowu • Anita</p>
 
         <hr />
 
