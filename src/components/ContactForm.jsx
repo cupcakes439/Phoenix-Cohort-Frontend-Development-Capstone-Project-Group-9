@@ -9,10 +9,11 @@ function ContactForm() {
     event.preventDefault(); 
     
     setIsSubmitted(true);
+    event.target.reset();
   };
 
   return (
-    <section className="form-container">
+    <section id="contactSection" className="form-container">
       <h2 className="form-heading">Have Questions About Planetary Science?</h2>
       
             {isSubmitted ? (
@@ -27,7 +28,10 @@ function ContactForm() {
       ) : (
         <>
           <p className="form-description">
-            Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? Reach out and we’ll get back to you.
+          Interested in learning more about space, astronomy, or how planetary data is collected and analyzed?
+          </p>
+          <p className="form-description">
+            Reach out and we’ll get back to you.
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -45,7 +49,7 @@ function ContactForm() {
 
               <div className="input-group"> 
                 <label htmlFor="phone-number">Phone number<span className="required">*</span></label> 
-                <input type="tel" id="phone-number" name="phone-number" placeholder="Please enter a valid phone number" maxLength="11" required />
+                <input type="tel" id="phone-number" name="phone-number" placeholder="Please enter a valid phone number" maxLength="11" pattern="[0-9]{11}" required />
               </div>    
 
               <div className="input-group"> 
