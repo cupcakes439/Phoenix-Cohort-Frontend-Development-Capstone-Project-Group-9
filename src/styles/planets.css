@@ -9,6 +9,8 @@
     --text-secondary-color: #000000;
 
     --primary-font: 'Inter', sans-serif;
+    --primary-font-weight: 600;
+    --secondary-font-weight: 400;
 }
 * {
     margin: 0;
@@ -16,7 +18,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--primary-font);
     background-color: var(--background-color);
 }
 
@@ -24,7 +26,7 @@ body {
 .planets-section {
   padding: 80px 40px;
   background-color: var(--background-color);
-  min-height: 100vh;
+  min-height: 1440px;
 }
 
 /* --- Section heading --- */
@@ -35,6 +37,7 @@ body {
 .planets-title {
   text-align: center;
   font-family: var(--primary-font);
+  font-weight: var(--primary-font-weight);
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 12px;
@@ -44,6 +47,7 @@ body {
 .planets-subtitle {
   text-align: center;
   font-family: var(--primary-font);
+  font-weight: var(--secondary-font-weight);
   color: var(--text-color-light);
   font-size: 1rem;
   margin-bottom: 60px;
@@ -66,12 +70,12 @@ body {
   border-radius: 30px;
   overflow: hidden;
   margin: 0;
-  box-shadow: 0 20px 40px rgba(100, 100, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(100, 100, 255, 0.05);
   cursor: none;
 }
 
 .planet-card:hover {
-  transform: translateY(-8px); 
+  transform: translateY(-5px); 
   border: 2px solid #5555aa;
 } 
 
@@ -132,24 +136,24 @@ body {
 RESPONSIVE BREAKPOINTS
 
 /* Tablet: 2 columns */
+
 @media (max-width: 1024px) {
   .planets-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
 
-  .planets-section {
+ .planets-section {
     padding: 60px 24px;
   }
 }
 
 /* Mobile: 1 column */
-@media (max-width: 640px) {
+ @media (max-width: 768px) {
   .planets-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
   .planets-section {
     padding: 40px 16px;
   }
@@ -157,8 +161,11 @@ RESPONSIVE BREAKPOINTS
   .planets-title {
     font-size: 1.8rem;
   }
+  .planets-subtitle {
+    font-size: 1rem;
+  }
 
   .planet-image-wrapper {
     height: 180px;
   }
-}
+} 
