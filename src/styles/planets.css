@@ -1,39 +1,42 @@
-
 .table-container h2 {
     color: #164baf;
     font-size: 32px;
     font-weight: 600;
     text-align: left;
+    margin-bottom: 20px;
 }
+
 .table-container p {
     text-align: left;
     margin: 0 0 14px;
     max-width: 100%;
+    margin-bottom: 24px
 }
 .table-container {
     display: block;
     width: 100%;
     max-width: 900px;
-    margin-top: 25px;
+    margin-top: 80px;
+    margin-left: 175px;
     background-color: #ffffff;
 }
 .table-container table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    border: 1px solid #0b3c7d;
+    border: 2px solid #FFFFFF;
     border-radius: 16px;
     overflow: hidden;
 }
 .table-container thead td[colspan="2"],
 .table-container thead th {
-    background-color: #0b3c7d;
+    background-color: #164BAF;
     color: #ffffff;
     padding: 14px 10px;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
 }
 .table-container thead td[colspan="2"] {
     border-top-left-radius: 16px;
@@ -47,38 +50,38 @@
 }
 .table-container th,
 .table-container td {
-    padding: 12px 10px;
+    padding: 16px 50px;
     text-align: center;
     font-size: 14px;
     color: #333333;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
 }
 .table-container tbody td {
-    background-color: #eef4fb;
+    background-color: #F2F7FF;
 }
 .table-container tbody tr:last-of-type th:first-of-type {
     border-bottom-left-radius: 16px;
 }
 .table-container tbody tr:nth-child(even) td {
-    background-color: #e5edf7;
+    background-color: #F2F7FF;
 }
 .table-container tbody th[scope="rowgroup"],
 .group,
 .subgroup {
-    background-color: #dbe9ff;
+    background-color: #D1E3FF;
     color: #000000;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #aac4f3;
+    border: 2px solid #ffffff;
     padding: 15px;
 }
 
 .table-container tbody th[scope="rowgroup"] {
-    border-left: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
     box-sizing: border-box;
 }
 
@@ -87,7 +90,7 @@
 .table-container tbody tr > th[colspan] + td,
 .table-container tbody tr td:first-child,
 .table-container tbody tr td:nth-child(2) {
-    border-left: 1px solid #ffffff;
+    border-left: 2px solid #ffffff;
 }
 
 
@@ -98,7 +101,7 @@
 
 
 .table-container tbody th[scope="rowgroup"] {
-    border-right: 1px solid #e6eefb;
+    border-right: 2px solid #FFFFFF;
 }
 @media (max-width: 768px) {
   .table-container{
