@@ -164,4 +164,9 @@ textarea:focus {
     width: 100%;
     padding: 16px;
   }
+
+  .form-container{
+    padding: 40px 20px;
+    text-align: center;
+  }
 }
