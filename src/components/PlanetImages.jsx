@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/planets.css';
 
 const API_URL = "https://anurella.github.io/json/planets.json";
-function PlanetImage() {
+function PlanetImages() {
   const [planets, setPlanets] = useState([]);
   useEffect(() => {
   fetch(API_URL)
@@ -43,4 +43,4 @@ function PlanetImage() {
   );
 }
 
-export default PlanetImage;
+export default PlanetImages;
