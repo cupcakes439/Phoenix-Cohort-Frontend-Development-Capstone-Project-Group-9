@@ -169,4 +169,12 @@ textarea:focus {
     padding: 40px 20px;
     text-align: center;
   }
+
+  .form-heading{
+    text-align: center;
+  }
+
+  .form-description{
+    text-align: center;
+  }
 }
