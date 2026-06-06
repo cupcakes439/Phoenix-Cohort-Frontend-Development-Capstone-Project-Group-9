@@ -3,14 +3,18 @@
     font-size: 32px;
     font-weight: 600;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+}
+
+.table-paragraph{
+    padding-bottom: 24px;
 }
 
 .table-container p {
     text-align: left;
     margin: 0 0 14px;
     max-width: 100%;
-    margin-bottom: 24px
+    margin-bottom: 20px;
 }
 .table-container {
     display: block;
