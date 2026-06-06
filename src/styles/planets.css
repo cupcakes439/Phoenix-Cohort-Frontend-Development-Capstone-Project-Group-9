@@ -109,21 +109,8 @@
   color: #000000;
   font-weight: 600;
 }
-RESPONSIVE BREAKPOINTS
 
-/* Tablet: 3 columns */
-
-@media (max-width: 1024px) {
-  .planets-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-
- .planets-section {
-    padding: 60px 24px;
-  }
-}
-
+/* RESPONSIVE BREAKPOINTS */
 /* Mobile: 2 column */
  @media (max-width: 768px) {
   .planets-grid {
