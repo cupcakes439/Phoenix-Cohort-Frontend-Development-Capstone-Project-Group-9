@@ -1,4 +1,5 @@
 import "../styles/hero.css";
+import earthImg from "../assets/images/075cfe8711f093d2ee4330cfa37d385003066f0a.png";
 
 function Hero() {
   return (
@@ -34,7 +35,7 @@ function Hero() {
         </div>
         <div className="hero-right-content">
           <figure>
-            <img className="plant-thumbnail" src="/images/075cfe8711f093d2ee4330cfa37d385003066f0a.png" alt="earth" />
+            <img className="plant-thumbnail" src={earthImg} alt="earth" />
           </figure>
         </div>
       </div>
