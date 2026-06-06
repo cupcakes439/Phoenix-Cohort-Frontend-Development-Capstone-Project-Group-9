@@ -4,7 +4,7 @@ function PlanetTable() {
   return (
     <div className="table-container">
       <h2>Planetary Facts at a Glance</h2>
-      <p>Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomer and researchers worldwide.</p>
+      <p className="table-paragraph">Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomer and researchers worldwide.</p>
       <p><strong>Data about the planets of our solar system (Planetary facts taken from NASA)</strong></p>
       <table>
       <thead>
