@@ -1,3 +1,142 @@
+/* --- Section wrapper --- */
+.planets-section {
+  padding: 74px 120px;
+  background-color: #f2f7ff;
+  min-height: 1440px;
+}
+
+/* --- Section heading --- */
+.planets-header {
+  max-width: 904px;
+  margin: 0 auto 40px;
+}
+.planets-title {
+  text-align: center;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #164BAF;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  
+}
+
+.planets-subtitle {
+  text-align: center;
+  font-family: inherit;
+  font-weight: 400;
+  color: #0F2A44;
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+/* --- Responsive grid --- */
+.planets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;    
+  padding: 0;
+}
+
+/* --- Individual planet card (the <figure> element) --- */
+.planet-card {
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 0 10px 20px rgba(100, 100, 255, 0.03);
+  cursor: pointer;
+}
+
+.planet-card:hover {
+  transform: translateY(-5px); 
+  border: 2px solid #5555aa;
+} 
+
+/* --- Image container --- */
+.planet-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #ffffff;
+
+}
+
+.planet-image {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  object-fit: cover;         
+}
+
+.planet-card:hover .planet-image {
+  transform: scale(1.06);     
+}
+
+/* --- figcaption: text info below the image --- */
+.planet-info {
+  padding: 20px 24px 24px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.planet-name {
+  font-size: 1.4rem;
+  color: #000000;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.planet-distance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #000000;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.value {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+/* Mobile: 2 column */
+ @media (max-width: 768px) {
+  .planets-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .planets-section {
+    padding: 101px 33px;
+  }
+
+  .planets-title {
+    font-size: 1.8rem;
+  }
+  .planets-subtitle {
+    font-size: 1rem;
+  }
+
+  .planet-image-wrapper {
+    height: 180px;
+  }
+} 
 .table-container h2 {
     color: #164baf;
     font-size: 32px;
