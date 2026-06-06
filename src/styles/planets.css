@@ -111,7 +111,7 @@
 }
 RESPONSIVE BREAKPOINTS
 
-/* Tablet: 2 columns */
+/* Tablet: 3 columns */
 
 @media (max-width: 1024px) {
   .planets-grid {
@@ -124,7 +124,7 @@ RESPONSIVE BREAKPOINTS
   }
 }
 
-/* Mobile: 1 column */
+/* Mobile: 2 column */
  @media (max-width: 768px) {
   .planets-grid {
     grid-template-columns: repeat(2, 1fr);
