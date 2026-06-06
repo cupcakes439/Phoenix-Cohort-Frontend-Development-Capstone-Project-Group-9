@@ -8,8 +8,9 @@
 
 .logo-fig-wrap {
     width: 5rem;
-    height: 1.2em;
+    height: 2em;
     margin: 0%;
+    padding-left: 0.5em;
 }
 
 .logo-fig-wrap .logo-thumbnail {
