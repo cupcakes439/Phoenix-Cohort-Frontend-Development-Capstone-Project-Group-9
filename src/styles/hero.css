@@ -1,0 +1,149 @@
+.hero-section {
+    background-color: #051540;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.hero-left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddcdc;
+    margin-bottom: 32px;
+    max-width: 540px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition:
+    background-color .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.hero-btn:hover {
+    background-color: #164BAF;
+    border-color: #164BAF;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.hero-right-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-right-content figure {
+    width: 100%;
+    margin: 0;
+}
+
+.hero-image-container {
+    width: 100%;
+    max-width: 644px;
+    margin: 0 auto;
+}
+
+.planet-thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    .hero-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .hero-left-content {
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .hero-actions {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-btn {
+        flex: 1;
+        max-width: 160px;
+        padding: 10px 16px;
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+
+    .hero-right-content {
+        order: -1;
+    }
+
+    .hero-right-content figure {
+    max-width: 280px;
+    margin: 0;
+    }
+
+    .hero-image-container {
+        max-width: 280px;
+    }
+}
