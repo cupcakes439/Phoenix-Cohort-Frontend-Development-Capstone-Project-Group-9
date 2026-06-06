@@ -1,0 +1,114 @@
+.table-container h2 {
+    color: #164baf;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.table-paragraph{
+    padding-bottom: 24px;
+}
+
+.table-container p {
+    text-align: left;
+    margin: 0 0 14px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table-container {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 80px;
+    margin-left: 175px;
+    background-color: #ffffff;
+}
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.table-container thead td[colspan="2"],
+.table-container thead th {
+    background-color: #164BAF;
+    color: #ffffff;
+    padding: 14px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid #ffffff;
+}
+.table-container thead td[colspan="2"] {
+    border-top-left-radius: 16px;
+}
+.table-container thead th:last-of-type {
+    border-top-right-radius: 16px;
+}
+.empty-corner {
+    border: none;
+    background-color: transparent;
+}
+.table-container th,
+.table-container td {
+    padding: 16px 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    border: 2px solid #ffffff;
+}
+.table-container tbody td {
+    background-color: #F2F7FF;
+}
+.table-container tbody tr:last-of-type th:first-of-type {
+    border-bottom-left-radius: 16px;
+}
+.table-container tbody tr:nth-child(even) td {
+    background-color: #F2F7FF;
+}
+.table-container tbody th[scope="rowgroup"],
+.group,
+.subgroup {
+    background-color: #D1E3FF;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #ffffff;
+    padding: 15px;
+}
+
+.table-container tbody th[scope="rowgroup"] {
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+
+/* Ensure the first two left columns keep a visible left grid line */
+.table-container tbody tr > th[colspan],
+.table-container tbody tr > th[colspan] + td,
+.table-container tbody tr td:first-child,
+.table-container tbody tr td:nth-child(2) {
+    border-left: 2px solid #ffffff;
+}
+
+
+.table-container tbody th[scope="rowgroup"][rowspan] {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.table-container tbody th[scope="rowgroup"] {
+    border-right: 2px solid #FFFFFF;
+}
+@media (max-width: 768px) {
+  .table-container{
+    display: none;
+  }
+}
