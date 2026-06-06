@@ -3,43 +3,34 @@ import earthImg from "../assets/images/075cfe8711f093d2ee4330cfa37d385003066f0a.
 
 function Hero() {
   return (
-    <div className="hero-section">
+    <section className="hero-section">
       <div className="hero-content-wrapper">
         <div className="hero-left-content">
-          <div className="page-brief">
-            <p>Explore Our Solar System Through Data</p>
-          </div>
-          <div className="page-description">
-            <p>
-              Understand the planets not just by name, but by measurable facts. From size and mass to gravity and
-              density, this page
-              breaks down the solar system in a clear, data-driven way.
-            </p>
-          </div>
-          <div className="button-frame">
-            <nav>
-              <ul>
-                <li>
-                  <a className="nav-button" href="#planets">
-                    Explore the Data
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-button" href="#contactSection">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </nav>
+          <h1 className="hero-title">
+            Explore Our Solar <br /> System Through Data
+          </h1>
+          <p className="hero-description">
+            Understand the planets not just by name, but by measurable facts. From size and mass to gravity and
+            density, this page breaks down the solar system in a clear, data-driven way.
+          </p>
+          <div className="hero-actions">
+            <a className="hero-btn btn-primary" href="#planets">
+              Explore the Data
+            </a>
+            <a className="hero-btn btn-secondary" href="#contactSection">
+              Contact Us
+            </a>
           </div>
         </div>
+
         <div className="hero-right-content">
-          <figure>
-            <img className="plant-thumbnail" src={earthImg} alt="earth" />
+          <figure className="hero-image-container">
+            <img className="planet-thumbnail" src={earthImg} alt="Render of Planet Earth" />
           </figure>
         </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 
