@@ -1,20 +1,26 @@
 .navbar-top {
-    background-color: rgba(5, 21, 64, 1);
+    background-color: #051540;
+    padding: 24px 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.5em 2.5rem;
+    width: 100%;
 }
 
 .logo-fig-wrap {
-    width: 5rem;
-    height: 2em;
-    margin: 0%;
-    padding-left: 0.5em;
+    width: 120px;
+    margin: 0;
 }
 
-.logo-fig-wrap .logo-thumbnail {
+.logo-thumbnail {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    display: block;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar-top {
+        padding: 20px;
+        justify-content: center;
+    }
 }
