@@ -1,6 +1,6 @@
-import "../styles/planets.css";
+import "../styles/table.css";
 
-function PlanetTable() {
+function TableSection() {
   return (
     <div className="table-container">
       <h2>Planetary Facts at a Glance</h2>
@@ -92,4 +92,4 @@ function PlanetTable() {
   );
 }
 
-export default PlanetTable;
+export default TableSection;

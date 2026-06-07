@@ -1,7 +1,8 @@
 import "./App.css"
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import PlanetSection from "./components/PlanetSection";
+import ImageSection from "./components/ImageSection";
+import TableSection from "./components/TableSection";
 import VideoSection from "./components/VideoSection";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
@@ -12,7 +13,8 @@ function App() {
       <Navbar />
       <Hero />
       <VideoSection />
-      <PlanetSection />
+      <ImageSection />
+      <TableSection />
       <ContactForm />
       <Footer />
     </>
