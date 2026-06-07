@@ -5,11 +5,14 @@ function Navbar() {
   return (
     <header className="navbar-top">
       <figure className="logo-fig-wrap">
-        <img className="logo-thumbnail" src={logoImg} alt="logo" />
+        <img
+          className="logo-thumbnail"
+          src={logoImg}
+          alt="Planet logo"
+        />
       </figure>
-      <span className="left-side-cont"></span>
     </header>
   );
 }
 
-export default Navbar;
+export default Navbar
