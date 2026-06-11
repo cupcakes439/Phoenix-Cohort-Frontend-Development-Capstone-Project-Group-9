@@ -1,27 +1,58 @@
-import { useState } from "react"; // 1. Import useState
+import { useState } from "react";
 import "../styles/contactform.css";
 
 function ContactForm() {
   
-    const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    setIsSubmitting(true);
+
+    const form = event.target;
+
+    const formData = new FormData();
+    formData.append("fullname", form.fullname.value);
+    formData.append("email", form.email.value);
+    formData.append("phone-number", form["phone-number"].value);
+    formData.append("message", form.message.value);
+      
+    try {
+      const response = await fetch(
+        "https://whitebricks.com/tsacademy.php",
+         {
+           method: "POST",
+          body: formData,
+         }
+      );
+
+      const text = await response.text();
+      console.log("RAW SERVER RESPONSE:", text);
     
-    setIsSubmitted(true);
-    event.target.reset();
+      if (response.ok) {
+        setIsSubmitting(true);
+        form.reset();
+      } else {
+        alert("Submission failed");
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <section id="contactSection" className="form-container">
       <h2 className="form-heading">Have Questions About Planetary Science?</h2>
       
-            {isSubmitted ? (
+        {isSubmitting ? (
         <div className="success-message">
           <h3>✅ Thank you for reaching out!</h3>
           <p>Your message has been successfully sent. Our team will get back to you shortly.</p>
           
-                    <button className="submit-btn" onClick={() => setIsSubmitted(false)}>
+            <button className="submit-btn" onClick={() => setIsSubmitting(false)}>
             Send Another Message
           </button>
         </div>
@@ -31,7 +62,7 @@ function ContactForm() {
           Interested in learning more about space, astronomy, or how planetary data is collected and analyzed?
           </p>
           <p className="form-description">
-            Reach out and we’ll get back to you.
+            Reach out and we'll get back to you.
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -60,8 +91,9 @@ function ContactForm() {
               
             </div> 
             
-            <button type="submit" className="submit-btn">
-              Submit <span className="arrow">&#8250;</span>
+            <button type="submit" className="submit-btn" disabled={isSubmitting}>
+              {isSubmitting ? "Submitting..." : "Submit"}
+              {!isSubmitting && <span className="arrow">&#8250;</span>}
             </button>
           </form>
         </>
