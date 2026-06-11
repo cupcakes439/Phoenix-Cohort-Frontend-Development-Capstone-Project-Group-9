@@ -26,18 +26,16 @@ function ContactForm() {
           body: formData,
          }
       );
-
-      const text = await response.text();
-      console.log("RAW SERVER RESPONSE:", text);
     
       if (response.ok) {
         setIsSubmitting(true);
         form.reset();
       } else {
-        alert("Submission failed");
+        alert("Submission failed. Please try again.");
       }
     } catch (error) {
-      console.error(error);
+      console.error("Error submitting form:", error);
+      alert("Network error. Please check your connection.")
     } finally {
       setIsSubmitting(false);
     }
